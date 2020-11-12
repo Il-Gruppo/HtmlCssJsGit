@@ -1,0 +1,87 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="Lorenzo.css">
+        <div class="quadrato">
+            <center><h1>Corso C++</h1></center>
+            <div id="image"><img src="cLogo.jpg">   </div>  
+        </div>   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">              
+    </head>
+  
+    <body onload="funzioneTabella()">    
+    <div id="page">
+        <nav>      
+            <ul>
+              <li><a href="Homepage.html">Homepage</a></li>
+              <li><a href="Corso_Python_Michele.html">Pagina Python</a></li>
+              <li><a href="filalic%23,html">Pagina c#</a></li>
+            </ul>
+        </nav>           
+          
+        <h2>Presentazione del corso</h2>
+          
+        <div class="column">
+                <p>This Specialization is intended for all programming enthusiasts, as well as beginners, computer and other scientists, and artificial intelligence enthusiasts seeking to develop their programming skills in the foundational languages of C and C++. Through the four courses — two in C, and two in C++ — you will cover the basics of programming in C and move on to the more advanced C++ semantics and syntax, which will prepare you to apply these skills to a number of higher-level problems using AI algorithms and Monte Carlo evaluation in complex games.</p>
+        </div>
+        <div class="column">
+                <p>Learners in this specialization will start coding right from the start. Every module presents ample opportunities for writing programs and finding errors in the learner's own and others' code. Building on their knowledge, learners will demonstrate their understanding of coding in a practice-intensive final assessment. A Coursera Specialization is a series of courses that helps you master a skill. To begin, enroll in the Specialization directly, or review its courses and choose the one you'd like to start with. Understand algorithms, and how to properly express them</p>
+        </div>
+                   
+        <div class="column2" >
+            <h4>Lezioni di teoria</h4>
+            <p>This Specialization is intended for all programming enthusiasts, as well as beginners, computer and other scientists, and artificial intelligence enthusiasts seeking to develop their programming skills in the foundational languages of C and C++. Through the four courses — two in C, and two in C++ — you will cover the basics of programming in C and move on to the more advanced C++ semantics and syntax, which will prepare you to apply these skills to a number of higher-level problems using AI algorithms and Monte Carlo evaluation in complex games.</p>
+    </div>
+    <div class="column2" >
+            <h4>Lezioni di pratica</h4>
+            <p>Learners in this specialization will start coding right from the start. Every module presents ample opportunities for writing programs and finding errors in the learner's own and others' code. Building on their knowledge, learners will demonstrate their understanding of coding in a practice-intensive final assessment. A Coursera Specialization is a series of courses that helps you master a skill. To begin, enroll in the Specialization directly, or review its courses and choose the one you'd like to start with. Understand algorithms, and how to properly express them</p>
+    </div>
+             
+  
+    <table id="Tabella" border="2">
+          <tbody>
+            <tr><th>Lezione</th><th>Numero Ore</th></tr>
+            <tr><td>Teoria 1</td><td>2</td></tr>
+            <tr><td>Teoria 2</td><td>2</td></tr>
+            <tr><td>Pratica 1</td><td>3</td></tr>
+            <tr><td>Pratica 2</td><td>3</td></tr>
+            <tr><td>Pratica 3</td><td>3</td></tr>
+            <tr><td>Test finale</td><td>1</td></tr>
+            <tr><td>Totale ore</td><td id="Totale"></td></tr>
+          </tbody>             
+    </table>
+  
+    <script>
+          
+            function funzioneTabella()
+            {
+              var tab=document.getElementById("Tabella");
+              var cells=tab.getElementsByTagName("td");
+            var tot=0;
+            var valore=0;
+            for (var i=0;i<(cells.length-1);i++)
+            {
+                valore=cells[i].textContent;
+              
+                if(!isNaN(valore))
+                {
+                  valore=parseInt(valore);
+                    tot=tot+valore;
+                }
+            }
+            document.getElementById("Totale").textContent=tot;
+            }                            
+    </script>
+
+            <footer id="footer">
+              <h4>Contatti</h4>
+              <p>Email: mail@gmail.com Tel: 0341 554321</p>
+            </footer>
+        
+    </div>
+        
+     
+  </body>
+  </html>
+    
