@@ -85,6 +85,7 @@ nav li{
 	clear: both;
 	font: bold 30px/100% Georgia;
 	text-align: center;
+	color: white;
 }
 .box{
 	width:50%;
@@ -194,5 +195,6 @@ nav li{
 		margin-top: 5px;
 		font: bold 12px/100% Georgia;
 		text-align: end;
+		color: white;
 	}
 }
