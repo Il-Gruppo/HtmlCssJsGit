@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  #page {
+    margin: auto;
+    width: 85%;
+}
+  body{
+    background: silver;
+  }
+  img {
+      width: 350px;
+      height: 250px;
+      max-width: 100%;
+      align-content: center;
+      display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+    
+  }
+  nav{
+    background-color: #0a2f59;
+    color:white; 
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  nav ul{
+    list-style-type: none;   /* vanno via pallini */
+  }
+  nav li a{
+    text-decoration: none;/* niente sottolineatura*/
+    color:white;
+  }
+  nav li{
+    display: inline-block; /*tutti in riga*/
+    padding: 15px;
+  }
+
+  nav li:hover{
+    background-color: #376d9b;
+}
+
+  
+  h2 {
+      background: silver;
+      text-align: center;
+      color:#376d9b
+    }
+  
+    .quadrato{
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin: auto;
+      width: 40%;
+      border:2px solid black;
+      padding:5px
+    }
+  
+    .column {
+        background-color: #1c6ec0;
+        border: solid 5px #0a2f59;
+        color: white;
+    }
+    .column2{
+      padding: 10px;
+      float: left;
+      color: white;
+      background-color: #1c6ec0;
+      width: 50%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 3px solid #0a2f59;
+    }
+ 
+
+  #tabella{
+      overflow-x: auto;
+      margin-top: 10%;
+      color: white;
+      background-color: #1c6ec0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 25%;
+      text-align: center;
+  }
+
+  footer{
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 900px) {  
+     
+    .column2{
+      width: 100%;     
+    }     
+  }
