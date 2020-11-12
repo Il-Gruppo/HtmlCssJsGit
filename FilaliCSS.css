@@ -69,3 +69,46 @@ nav li:hover{
     border: solid 5px #0a2f59;
     color: white;
 }
+#Corso{
+    float: left;
+    color: white;
+    background-color: #1c6ec0;
+    width: 33%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid 5px #0a2f59;
+}
+
+#tabella{
+    margin-top: 20px;
+    color: white;
+    background-color: #1c6ec0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    border: solid 5px #0a2f59;
+    
+}
+
+footer{
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    background-color: #0a2f59;
+    text-align: center;
+}
+@media only screen and (max-width:500px) {
+    #Corso,#tabella {
+      width:100%;
+    }
+    #immagine{
+    width: 100%;
+    height: 100%;
+    display: unset;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}
+
