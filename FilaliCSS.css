@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: silver;
+    font: 1em/150% Georgia;
+}
+
+#immagine{
+    width: 40%; 
+    height: 40%; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 5px;
+}
+#page {
+    margin: auto;
+    width: 90%;
+}
+
+#titoloPagina{
+    height: auto;
+    width: auto;
+    text-align: center;
+    color: silver;
+    background-color: #0a2f59;
+    padding: 15px;
+}
+nav{
+    background-color: #0a2f59;
+    color:white; 
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-decoration: none;	
+}
+a{
+color: white;
+text-decoration: none;	
+padding-right: 30px;
+padding-left: 30px;
+
+}
+a:hover{
+    text-decoration: underline;
+}
+nav li:hover{
+    background-color: #376d9b;
+}
+
+#presentazioneCorso{
+    color: white;
+    background-color: #0a2f59;
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 5px;
+}
+
+.box{
+    background-color: #1c6ec0;
+    border: solid 5px #0a2f59;
+    color: white;
+}
