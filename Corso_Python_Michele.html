@@ -43,6 +43,58 @@
         </div>
 
         <div>
+            <table id="tab1" border="1">
+                <tbody><tr><th>Lezione</th><th>Orario</th></tr>
+                    <tr><td>Introduzione-Lezione0</td><td id="lez0">8.30-9.30</td></tr>
+                    <tr><td>Lezione1</td><td id="lez1">10.00-12.00</td></tr>
+                    <tr><td>Lezione2</td><td id="lez2">8.30-11.30</td></tr>
+                    <tr><td>Lezione3</td><td id="lez3">11.30-12.30</td></tr>
+                    <tr><td>Lezione Finale-Lezione4</td><td id="lez4">8.30-9.30</td></tr>
+                    <tr><td>Test</td><td id="lt">9.00-12.00</td></tr>
+                    <tr><td>TOTALE</td><td id="totOre" style="text-decoration: underline;"></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <table id="tab2" border="1">
+                <tbody><tr><th>Alunni Presenti</th><th>Iscritti Lezione</th></tr>
+                    <tr><td class="somma">20</td><td>22</td></tr>
+                    <tr><td class="somma">20</td><td>22</td></tr>
+                    <tr><td class="somma">16</td><td>22</td></tr>
+                    <tr><td class="somma">18</td><td>22</td></tr>
+                    <tr><td class="somma">19</td><td>22</td></tr>
+                    <tr><td class="somma">22</td><td>22</td></tr>
+                </tbody>
+            </table>
+        </div>        
+        
+        <script>    //script tabella 1 - orari
+            var totOre = 0;
+            var tab1 = document.getElementById("tab1");
+            var celle = tab1.getElementsByTagName("td");
+            for (var i=0; i<(celle.length-1); i++)
+                {
+                    if(!isNaN(parseInt(String(celle[i].textContent).split("-")[0])))
+                    {
+                        totOre = totOre + (parseInt(String(celle[i].textContent).split("-")[1]) - parseInt(String(celle[i].textContent).split("-")[0]));
+                    }
+                }
+            document.getElementById("totOre").textContent = "tot ore: " + String(totOre);
+        </script>
+
+        <script>    //script tabella 2 - alunni
+            var tds = document.getElementById('tab2').getElementsByTagName('td');
+            var sum = 0;
+            for(var i = 0; i < tds.length; i ++) {
+                if(tds[i].className == 'somma') {
+                    sum += isNaN(tds[i].innerHTML) ? 0 : parseInt(tds[i].innerHTML);
+                }
+            }
+            document.getElementById('tab2').innerHTML += '<tr><td>' + 'Totale Presenti: ' + sum + '</td><td>Alunni Iscritti</td></tr>';
+        </script>
+                
+        <div>
             <footer id="footer">
                 <h4><i>Michele Magni</i></h4>
             </footer>
