@@ -1,0 +1,61 @@
+body {
+	font: bold 20px/100% Georgia;
+	background-color: silver;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+header{
+	background-image: url("header.jpg");
+	background-size: 1250px 409px;
+	width: 1250px;
+	height: 409px;
+}
+
+/************************************************************************************
+STRUTTURA - dimensione
+*************************************************************************************/
+
+#pagina {
+	padding: 5px;
+	width: 1250px;
+	margin: 20px auto;
+}
+#header {
+	text-align: center;
+}
+.testoheader{
+font-size: medium;
+
+}
+
+.titoli
+{
+	margin-top: 20px;
+	background-color: #376d9b;
+	width: auto;
+	padding: 10px;
+}
+
+.titoli h1
+{
+	color: white;
+	text-align: center;
+}
+.titoli2
+{
+	background-color: #376d9b;
+	width: auto;
+	margin: 0;
+	padding: 10px;
+}
+
+.titoli2 h1
+{
+	color: white;
+	text-align: center;
+}
