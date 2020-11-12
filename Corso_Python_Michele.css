@@ -1,0 +1,49 @@
+body {
+	font: 1em/150% Georgia;
+}
+a {
+	color: #0a2f59;
+	text-decoration: none;	
+}
+a:hover {
+	text-decoration: underline;
+}
+h1 {
+	font: bold 36px/100% Georgia;
+}
+#pagina {
+	padding: 5px;
+	width: 75%;
+	margin: 20px auto;
+}
+#header {
+	height: 450px;
+	border: solid 2px #0a2f59;
+	text-align: center;
+
+	background-image: url("pythonHD.jpg");
+	height: 450px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+nav{
+	background-color: #0a2f59;
+	color:#0a2f59; 
+	text-align: center;	
+}
+nav ul{
+	list-style-type: none;
+}
+nav li a{
+  text-decoration: none;
+  color: white;
+}
+nav li:hover
+{
+  background-color: #376d9b;
+}
+nav li{
+  display: inline-block;
+  padding: 15px;
+}
